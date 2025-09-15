@@ -6946,6 +6946,16 @@
 		)
 		(uuid "799a8db4-9cb1-489b-afaa-3be7eee69372")
 	)
+	(wire
+		(pts
+			(xy 250.19 109.22) (xy 250.19 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ede641-6e66-4195-aa60-e47485aad289")
+	)
 	(polyline
 		(pts
 			(xy 171.45 124.46) (xy 171.45 196.85)
@@ -8526,6 +8536,16 @@
 			(justify left bottom)
 		)
 		(uuid "7b4149f3-7c9f-4b5a-b9ae-299442e5850c")
+	)
+	(label "BAT"
+		(at 250.19 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c44e6ec-2516-43d9-ba87-80c74633d5a3")
 	)
 	(label "~{CE}"
 		(at 115.57 59.69 0)
@@ -10973,7 +10993,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 215.9 117.8052 0)
 			(effects
 				(font
@@ -11000,7 +11020,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105883"
+		(property "LCSC" "C91185"
 			(at 219.71 116.84 90)
 			(effects
 				(font
@@ -12404,6 +12424,72 @@
 			(project ""
 				(path "/f7e38ffb-df5d-4aea-a3f5-296732509798"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "503c0109-7b17-47c9-9487-179f4f7893b4")
+		(property "Reference" "#PWR055"
+			(at 250.19 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42b40dfa-0dc4-4af1-a1c3-f04e64a50008")
+		)
+		(instances
+			(project "uwb-antenna"
+				(path "/f7e38ffb-df5d-4aea-a3f5-296732509798"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -15261,6 +15347,85 @@
 			(project ""
 				(path "/f7e38ffb-df5d-4aea-a3f5-296732509798"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 250.19 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7289633-ee89-4748-80f2-59b5b9c3e758")
+		(property "Reference" "C18"
+			(at 254 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 254 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 251.1552 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 250.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1779"
+			(at 250.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f155d07f-33e6-4b92-ba9d-faf252dea4f4")
+		)
+		(pin "1"
+			(uuid "c5beba9f-229b-4ca1-af6e-fc996d4c17b1")
+		)
+		(instances
+			(project "uwb-antenna"
+				(path "/f7e38ffb-df5d-4aea-a3f5-296732509798"
+					(reference "C18")
 					(unit 1)
 				)
 			)
