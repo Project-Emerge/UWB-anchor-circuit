@@ -18,7 +18,7 @@ jobs:
       - name: Run KiCad actions
         uses: actions-for-kicad/kicad-actions@v1-k9.0
         with:
-          schematic_file_name: ./rover-circuit.kicad_sch
+          schematic_file_name: ./uwb-antenna.kicad_sch
           # symbol_libraries: "symbol-library=./symbol-library.kicad_sym"
           run_erc: true
           schematic_output_pdf: true
