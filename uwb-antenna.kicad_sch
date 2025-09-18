@@ -5661,12 +5661,16 @@
 		(uuid "2a7f3d78-2d7a-4175-8c0b-f746ffe65efb")
 	)
 	(no_connect
-		(at 160.02 36.83)
-		(uuid "345c24a7-a764-43de-b0c0-f760ff9bf8d8")
+		(at 134.62 44.45)
+		(uuid "2e8318d9-b57b-4bcb-8a6e-103ff5ca15e7")
 	)
 	(no_connect
 		(at 69.85 76.2)
 		(uuid "35b30096-e0d2-413e-93de-7cf3cd6b732e")
+	)
+	(no_connect
+		(at 134.62 46.99)
+		(uuid "5c7f1aaf-fd7f-4251-aaf6-117f5739b9f0")
 	)
 	(no_connect
 		(at 134.62 167.64)
@@ -5687,10 +5691,6 @@
 	(no_connect
 		(at 24.13 60.96)
 		(uuid "c737ce99-5a35-4cd4-97d4-aa4043c3a44f")
-	)
-	(no_connect
-		(at 160.02 34.29)
-		(uuid "d2543ec1-050b-4bfe-b616-5e85f8e003fc")
 	)
 	(no_connect
 		(at 69.85 66.04)
@@ -6370,7 +6370,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 46.99) (xy 134.62 46.99)
+			(xy 168.91 34.29) (xy 160.02 34.29)
 		)
 		(stroke
 			(width 0)
@@ -7400,7 +7400,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 44.45) (xy 134.62 44.45)
+			(xy 168.91 36.83) (xy 160.02 36.83)
 		)
 		(stroke
 			(width 0)
@@ -8370,12 +8370,12 @@
 		(uuid "b5f35d21-03f5-4643-9b64-377e0d4bb2a1")
 	)
 	(label "UWB_RST"
-		(at 121.92 44.45 0)
+		(at 168.91 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "be90ddcb-61e4-4c18-83e3-4588ed7b27b2")
 	)
@@ -8460,12 +8460,12 @@
 		(uuid "dcb65d5a-997b-4825-a500-731c6fe91ad8")
 	)
 	(label "WAKEUP"
-		(at 121.92 46.99 0)
+		(at 168.91 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "dd266040-15d7-43c1-8563-aef36991b7b0")
 	)
@@ -9522,7 +9522,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22399626"
+		(property "LCSC" "C48579272"
 			(at 208.28 77.47 0)
 			(effects
 				(font
@@ -12139,7 +12139,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C165978"
+		(property "LCSC" "C136118"
 			(at 260.35 148.59 0)
 			(effects
 				(font
@@ -15548,7 +15548,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22399626"
+		(property "LCSC" "C48579272"
 			(at 274.32 77.47 0)
 			(effects
 				(font
@@ -16214,7 +16214,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22399626"
+		(property "LCSC" "C48579272"
 			(at 262.89 77.47 0)
 			(effects
 				(font
