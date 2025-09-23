@@ -28,6 +28,7 @@ jobs:
           run_drc: true
           pcb_output_gerbers_and_drill: true
           pcb_output_image: true
+          pcb_output_step: true
     
       - name: Upload schematic
         uses: actions/upload-artifact@v4
@@ -46,6 +47,12 @@ jobs:
         with:
           name: Image render
           path: ./pcb.png
+
+      - name: Upload STEP file
+        uses: actions/upload-artifact@v4
+        with:
+          name: STEP file
+          path: ./pcb.step
 
   release:
     name: Create Release
@@ -85,12 +92,14 @@ jobs:
             - 📋 **uwb-antenna-schematic.pdf** - Schematic PDF for documentation
             - 🔧 **uwb-antenna-gerbers.zip** - Gerber files and drill files for PCB manufacturing
             - 🖼️ **uwb-antenna-pcb-render.png** - PCB render image for visualization
+            - 🧊 **uwb-antenna-board.step** - 3D STEP model of the PCB for mechanical design
             
             Generated from commit: ${{ github.sha }}
           files: |
             ./artifacts/Schematic/schematic.pdf
             ./uwb-antenna-gerbers.zip
             ./artifacts/Image render/pcb.png
+            ./artifacts/STEP file/pcb.step
           draft: false
           prerelease: false
 
